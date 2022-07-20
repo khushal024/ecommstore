@@ -39,6 +39,10 @@ clone specific branch(git clone --branch <branchname> <remote-repo-url>)
 >commit changes (git commit -m "Initial commit")
 >merge change to parent branch (git merge) !bit complicated google
 
+>>push files from one branch to another --
+1. switch to the branch you want new code (git switch <brach-name>) 
+2. get new code from branch (git pull origin <from-branch>)
+3. then push origin of that branch (git push origin <branch>)
 >check satus (git status)
 >change branch (git checkout <name-of-your-branch>)
 >see branches (git branch)
