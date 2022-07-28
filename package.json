@@ -12,11 +12,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
-=======
-    "sass": "^1.53.0",
-    "scss": "^0.2.4",
->>>>>>> f49eda210d944ef232707ea188cfbae4968d7856
     "web-vitals": "^2.1.4"
   },
   "scripts": {

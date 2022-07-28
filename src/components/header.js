@@ -1,39 +1,66 @@
 import React from "react";
 
-export const Heeader = ()=>{
-    return(
-    <header className="p-3 mb-3 border-bottom">
-<div className="container">
-  <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-    <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-    
-    </a> 
+export const Header = () => {
+    return (
+        <header className="py-2 text-bg-dark border-bottom">
+            <div className="container">
+                <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
-    <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="/#" className="nav-link px-2 link-secondary">Overview</a></li>
-      <li><a href="/#" className="nav-link px-2 link-dark">Inventory</a></li>
-      <li><a href="/#" className="nav-link px-2 link-dark">Customers</a></li>
-      <li><a href="/#" className="nav-link px-2 link-dark">Products</a></li>
-    </ul>
+                    <div class="site-logo">
+                        <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                            <img src={require('../images/favicon.png')} alt="gfgf" width="50"/>
+                        </a>
+                    </div>
 
-    <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-      <input type="search" className="form-control" placeholder="Search..." aria-label="Search" />
-    </form>
+                    <div className="main-nav ms-5">
+                        <ul class="nav col-12 col-lg-auto my-2  justify-content-center my-md-0 text-small">
+                            <li>
+                                <a href="/#" class="nav-link text-secondary">
+                                    <img src={require('../images/home.png')} class="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/#" class="nav-link px-3 text-white">
+                                    <img src={require('../images/4boxes.png')} class="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/#" class="nav-link px-3 text-white">
+                                    <img src={require('../images/meter.png')} class="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
+                                    Orders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/#" class="nav-link px-3 text-white">
+                                    <img src={require('../images/calender.png')} class="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
+                                    Products
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-    <div className="dropdown text-end">
-      <a href="/#" className="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle" />
-      </a>
-      <ul className="dropdown-menu text-small" >
-        <li><a className="dropdown-item" href="/#">New project...</a></li>
-        <li><a className="dropdown-item" href="/#">Settings</a></li>
-        <li><a className="dropdown-item" href="/#">Profile</a></li>
-        <li><hr className="dropdown-divider" /></li>
-        <li><a className="dropdown-item" href="/#">Sign out</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-</header>  
-)    
+                    <div className="ms-auto d-flex  align-items-center justify-content-center">
+                        <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                            <input type="search" className="form-control" placeholder="Search..." aria-label="Search" />
+                        </form>
+
+                        <div className="dropdown text-end">
+                            <a href="/#" className="d-block text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle" />
+                            </a>
+                            <ul className="dropdown-menu text-small" >
+                                <li><a className="dropdown-item" href="/#">Wishlist</a></li>
+                                <li><a className="dropdown-item" href="/#">Settings</a></li>
+                                <li><a className="dropdown-item" href="/#">Profile</a></li>
+                                <li><hr className="dropdown-divider" /></li>
+                                <li><a className="dropdown-item" href="/#">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    )
 }

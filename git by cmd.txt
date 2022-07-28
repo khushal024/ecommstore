@@ -42,6 +42,7 @@ clone specific branch(git clone --branch <branchname> <remote-repo-url>)
 >>push files from one branch to another --
 1. switch to the branch you want new code (git switch <brach-name>) 
 2. get new code from branch (git pull origin <from-branch>)
+   ------If yoou have issues{git pull origin <from-branch> --allow-unrelated-histories}
 3. then push origin of that branch (git push origin <branch>)
 >check satus (git status)
 >change branch (git checkout <name-of-your-branch>)
