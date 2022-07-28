@@ -6,35 +6,35 @@ export const Header = () => {
             <div className="container">
                 <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
-                    <div class="site-logo">
+                    <div className="site-logo">
                         <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
                             <img src={require('../images/favicon.png')} alt="gfgf" width="50"/>
                         </a>
                     </div>
 
                     <div className="main-nav ms-5">
-                        <ul class="nav col-12 col-lg-auto my-2  justify-content-center my-md-0 text-small">
+                        <ul className="nav col-12 col-lg-auto my-2  justify-content-center my-md-0 text-small">
                             <li>
-                                <a href="/#" class="nav-link text-secondary">
-                                    <img src={require('../images/home.png')} class="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
+                                <a href="/#" className="nav-link text-secondary">
+                                    <img src={require('../images/home.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="/#" class="nav-link px-3 text-white">
-                                    <img src={require('../images/4boxes.png')} class="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
+                                <a href="/#" className="nav-link px-3 text-white">
+                                    <img src={require('../images/4boxes.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
                                     Dashboard
                                 </a>
                             </li>
                             <li>
-                                <a href="/#" class="nav-link px-3 text-white">
-                                    <img src={require('../images/meter.png')} class="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
+                                <a href="/#" className="nav-link px-3 text-white">
+                                    <img src={require('../images/meter.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
                                     Orders
                                 </a>
                             </li>
                             <li>
-                                <a href="/#" class="nav-link px-3 text-white">
-                                    <img src={require('../images/calender.png')} class="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
+                                <a href="/#" className="nav-link px-3 text-white">
+                                    <img src={require('../images/calender.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
                                     Products
                                 </a>
                             </li>
