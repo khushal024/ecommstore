@@ -1,0 +1,49 @@
+Git by cmd---------------
+-----------------------------------------
+Basic Terms and Command of Git
+////
+>git is a tool to manage the history of a project using git commands. The history details are stored in a hidden directory named .git.
+>repository is a conventional name of a git project hosted on the GitHub server.
+>.gitignore files contain the names (or patterns) of the files or directories that will neither be tracked nor uploaded to a GitHub repository by git.
+>remote is the command used to add SSH or HTTPS URL links of a GitHub repository.
+>origin is just a conventional name for a GitHub repository URL.
+>staged can be visualized as a bucket of files or directories whose changes are ready to be stored. The add command is used to stage changes.
+>commit is used to store the state of all the staged files with an optional message.
+>pull is used to copy the code from a remote branch in the current project.
+>push is used to move the committed changes to a remote repository.
+>merge is used to merge our branch code to parent branch
+>fetch means grtting code of main repo or any branch
+-------------------------
+>Download git 
+>you can login via these commands{
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+}
+>download git vs code scm extention
+
+-------push new project by cmd to git >----------
+>download gh cli > after > (winget install --id GitHub.cli)
+>we have to authenticate > (gh auth login)
+>create repositry by cmd (gh repo create calaulator --public  --enable-issues=false )
+>go to root of project on local (git init)
+>connect local project to git repo (git remote add origin https://github.com/khushal024/calaulator)
+
+-------Common use commands------------------
+>>>To run old project pulled from git just run (npm install) it will make node modules changes and we can run app by (npm start)
+clone existing repositry (git clone repositry-url )
+clone specific branch(git clone --branch <branchname> <remote-repo-url>)
+>see connected repositry (git remote)
+>remove connected repositry (git remote rm repositry-name)
+>pull repo or branch (git pull origin brench-name)
+>push files to git (git push <remote> <branch-name)
+>commit changes (git commit -m "Initial commit")
+>merge change to parent branch (git merge) !bit complicated google
+
+>>push files from one branch to another --
+1. switch to the branch you want new code (git switch <brach-name>) 
+2. get new code from branch (git pull origin <from-branch>)
+3. then push origin of that branch (git push origin <branch>)
+>check satus (git status)
+>change branch (git checkout <name-of-your-branch>)
+>see branches (git branch)
+>add all untracked files (git add -A)
