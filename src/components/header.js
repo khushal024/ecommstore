@@ -1,7 +1,10 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 export const Header = () => {
     return (
+        <>
+
         <header className="py-2 text-bg-dark border-bottom">
             <div className="container">
                 <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -15,29 +18,30 @@ export const Header = () => {
                     <div className="main-nav ms-5">
                         <ul className="nav col-12 col-lg-auto my-2  justify-content-center my-md-0 text-small">
                             <li>
-                                <a href="/#" className="nav-link text-secondary">
+                                <Link to="/" className="nav-link text-secondary">
                                     <img src={require('../images/home.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/#" className="nav-link px-3 text-white">
-                                    <img src={require('../images/4boxes.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/#" className="nav-link px-3 text-white">
-                                    <img src={require('../images/meter.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
-                                    Orders
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/#" className="nav-link px-3 text-white">
+                                <Link to="/shop" className="nav-link px-3 text-white">
                                     <img src={require('../images/calender.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
-                                    Products
-                                </a>
+                                    Shop
+                                </Link>
                             </li>
+                            <li>
+                                <Link to="/cart" className="nav-link px-3 text-white">
+                                    <img src={require('../images/4boxes.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
+                                    cart
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/#" className="nav-link px-3 text-white">
+                                    <img src={require('../images/meter.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
+                                    Blogs
+                                </Link>
+                            </li>
+
                         </ul>
                     </div>
 
@@ -62,5 +66,6 @@ export const Header = () => {
                 </div>
             </div>
         </header>
+        </>
     )
 }
