@@ -19,12 +19,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    //...
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
-  //...
-  "build": "react-scripts build && cp build/index.html build/404.html", // this will prevent page reloads to give a  404 error
-
+  "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
