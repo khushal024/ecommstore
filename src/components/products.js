@@ -1,36 +1,39 @@
 import React,{useState,useEffect} from 'react';
 
 const Products = ()=> {
-  const [data,setData]=useState([]);
-  const getData=()=>{
-    fetch('./backend/userdata.json'  
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
-    )
-      .then(function(response){
-        console.log(response)
-        return response.json();
-      })
-      .then(function(myJson) {
-        console.log(myJson);
-        setData(myJson)
-      });
-  }
-  useEffect(()=>{
-    getData()
-  },[])
+  
+  // const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]); 
 
-  return (
-    <div className="hihi">
-     {
-       data && data.length>0 && data.map((item)=><img src={item.picture} alt="" />)
-     }
-    </div>
-  );
+  // Note: the empty deps array [] means
+  // this useEffect will run once
+  // similar to componentDidMount()
+  useEffect(() => {
+    fetch("https://makeup-api.herokuapp.com/api/v1/products.json") 
+      .then(res => res.json())
+      .then(
+        (result) => {
+          setIsLoaded(true);
+          setItems(result);
+        }
+      )
+  }, [])
+
+   if (!isLoaded) {
+    return <div>Loading...</div>;
+  } else {
+    return (
+      <ul>
+        {items.map((item) => (
+          <li key={item.id}>
+            {item.name}
+            {item.price} 
+          </li>
+        ))}
+      </ul>
+    );
+  }
 }
 
 export default Products;

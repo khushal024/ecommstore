@@ -4,14 +4,14 @@ import './App.scss';
 import { Header } from "./components/header"
 import { Footer } from './components/footer';
 import {Shop} from './components/shop'
-// import Products from './components/products'
+import Products from './components/products'
 import { Frontpage } from './components/frontpage';
 function App() {
 
 
   return (
 
-    <div className="App">
+    <div className="App"> 
         <Router>
       <Header />
 
@@ -20,7 +20,7 @@ function App() {
           
           <Route path="/shop" element={<Shop />} />
           <Route path="/cart" element={<Frontpage />} /> 
-          <Route path="/checkout" element={<Frontpage />} />
+          <Route path="/checkout" element={<Products />} />
           <Route path="/profile" element={<Frontpage />} />
         </Routes>
       
