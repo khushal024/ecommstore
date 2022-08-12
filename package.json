@@ -9,10 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.0",
     "jquery": "^3.6.0",
-<<<<<<< HEAD
     "popper.js": "^1.16.1",
-=======
->>>>>>> a7f4cd2ed3145f6ffe32b4aafffc9d2ec6a6a5ab
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
