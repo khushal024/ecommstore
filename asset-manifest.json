@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ecommstore/static/css/main.b4b0ad81.css",
+    "main.js": "/ecommstore/static/js/main.80601cba.js",
+    "static/js/787.45ae4b1e.chunk.js": "/ecommstore/static/js/787.45ae4b1e.chunk.js",
+    "static/media/medicines.jpg": "/ecommstore/static/media/medicines.7f8dbe5930654abfe1b5.jpg",
+    "static/media/medicine.png": "/ecommstore/static/media/medicine.2d504f757117d45b0299.png",
+    "static/media/about-medicine.png": "/ecommstore/static/media/about-medicine.42effbfcc2a687fefe7a.png",
+    "static/media/contact-bg.jpg": "/ecommstore/static/media/contact-bg.b5698601a7a2c2a71d12.jpg",
+    "static/media/hero-bg.jpg": "/ecommstore/static/media/hero-bg.f7cd7fa0bb774a6bec44.jpg",
+    "static/media/client.png": "/ecommstore/static/media/client.af11428716187d15f459.png",
+    "static/media/p-1.jpg": "/ecommstore/static/media/p-1.405054539bf228ab761f.jpg",
+    "static/media/p-2.jpg": "/ecommstore/static/media/p-2.b2c20dc46e9bc7b69144.jpg",
+    "static/media/p-3.jpg": "/ecommstore/static/media/p-3.4d0c1689f254fdd2b785.jpg",
+    "static/media/p-4.jpg": "/ecommstore/static/media/p-4.ab4c708036abce8106b8.jpg",
+    "static/media/p-5.jpg": "/ecommstore/static/media/p-5.91fee94ba769339d7455.jpg",
+    "static/media/p-6.jpg": "/ecommstore/static/media/p-6.796058e6c1f544a73ab4.jpg",
+    "index.html": "/ecommstore/index.html",
+    "main.b4b0ad81.css.map": "/ecommstore/static/css/main.b4b0ad81.css.map",
+    "main.80601cba.js.map": "/ecommstore/static/js/main.80601cba.js.map",
+    "787.45ae4b1e.chunk.js.map": "/ecommstore/static/js/787.45ae4b1e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4b0ad81.css",
+    "static/js/main.80601cba.js"
+  ]
+}
