@@ -1,50 +1,10 @@
 import React from "react";
-<<<<<<< HEAD
-=======
+
 import {Link} from 'react-router-dom';
->>>>>>> a7f4cd2ed3145f6ffe32b4aafffc9d2ec6a6a5ab
 
 export const Header = () => {
     return (
         <>
-<<<<<<< HEAD
-            <div className="container">
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <a className="navbar-brand" href="/#">Hidden brand</a>
-                        <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li className="nav-item active">
-                                <a className="nav-link" href="/#">Home <span className="sr-only">(current)</span></a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/#">Link</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link disabled" href="/#">Disabled</a>
-                            </li>
-
-                            <li className="dropdown">
-                                <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown button
-                                </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a className="dropdown-item" href="/#">Action</a>
-                                    <a className="dropdown-item" href="/#">Another action</a>
-                                    <a className="dropdown-item" href="/#">Something else here</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <form className="form-inline my-2 my-lg-0">
-                            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
-                </nav>
-            </div>
-=======
 
         <header className="py-2 text-bg-dark border-bottom">
             <div className="container">
@@ -77,9 +37,9 @@ export const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/#" className="nav-link px-3 text-white">
+                                <Link to="/login" className="nav-link px-3 text-white">
                                     <img src={require('../images/meter.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
-                                    Blogs
+                                    login
                                 </Link>
                             </li>
 
@@ -107,7 +67,6 @@ export const Header = () => {
                 </div>
             </div>
         </header>
->>>>>>> a7f4cd2ed3145f6ffe32b4aafffc9d2ec6a6a5ab
         </>
     )
 }

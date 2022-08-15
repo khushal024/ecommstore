@@ -7,7 +7,14 @@ export const Shop = () => {
     const [error, setError] = useState(null)
 
     useEffect( () => {
-        fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
+        // fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
+        fetch("./backend/productsapi.json"
+        ,{
+            headers : { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+             }
+          })
             .then(res => res.json())
             .then((result) => {
                 setLoading(true)

@@ -52,12 +52,7 @@ export const Frontpage = () => {
               <div className="detail-box">
                 <h2>
                   You get <br />
-                  any medicine <br />
-                  on
-                  <span>
                     10% discount
-                  </span>
-
                 </h2>
                 <p>
                   It is a long established fact that a reader will be distracted by
