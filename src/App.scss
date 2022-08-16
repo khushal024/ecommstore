@@ -857,3 +857,46 @@ a:focus {
 }
 
 /* end footer section*/
+
+
+
+.item-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.card {
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+img {
+  width: auto;
+  height: 350px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+}
+/* PRODUCT PAGE STYLES */
+.product-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 6em 6em 2.5em 6em;
+  gap: 6em;
+}
+.prod-image {
+  width: 55rem;
+  height: auto;
+}
+.brand {
+  text-align: left;
+}
+.back {
+  text-align: center;
+  margin-bottom: 2em;
+}
