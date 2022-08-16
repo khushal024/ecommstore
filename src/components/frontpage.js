@@ -81,7 +81,7 @@ export const Frontpage = () => {
       <section className="health_section layout_padding">
         <div className="health_carousel-container">
           <h2 className="text-uppercase">
-            Medicine & Health
+            Our products
 
           </h2>
           <Shop />
