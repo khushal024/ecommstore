@@ -36,10 +36,10 @@ export const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/#" className="nav-link px-3 text-white">
+                                <a href="https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline" className="nav-link px-3 text-white">
                                     <img src={require('../images/meter.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
                                     Blogs
-                                </Link>
+                                </a>
                             </li>
 
                         </ul>
