@@ -1,4 +1,5 @@
 import React from "react";
+
 import {Link} from 'react-router-dom';
 
 export const Header = () => {
@@ -36,10 +37,10 @@ export const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <a href="https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline" className="nav-link px-3 text-white">
+                                <Link to="/login" className="nav-link px-3 text-white">
                                     <img src={require('../images/meter.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
-                                    Blogs
-                                </a>
+                                    login
+                                </Link>
                             </li>
 
                         </ul>
@@ -52,7 +53,7 @@ export const Header = () => {
 
                         <div className="dropdown text-end">
                             <a href="/#" className="d-block text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle" />
+                                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle" />   
                             </a>
                             <ul className="dropdown-menu text-small" >
                                 <li><a className="dropdown-item" href="/#">Wishlist</a></li>
