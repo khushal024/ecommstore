@@ -9,7 +9,7 @@ export const Shop = () => {
 
     useEffect(() => {
         // fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
-        fetch("https://shoppingapiacme.herokuapp.com/shopping")
+        fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline`)
             .then(res => res.json())
             .then((result) => {
                 setLoading(true)
@@ -40,12 +40,12 @@ export const Shop = () => {
                 <div className="container">
                     <div className='item-container my-5 row'>
                         {items.map((item) => (
-                            <div className="col-md-4">
-                                <div className='card' key={item.id}>
-                                    <img src={item.image} alt='' />
-                                    <h3>{item.brand}</h3>
-                                    <p>{item.item}</p>
-                                    <Link to={`/${item.id}`}>View</Link>
+                            <div className="col-md-4" key={item.id}>
+                                <div className='card'>
+                                     <img src={item.image_link} alt='' />
+                                    <h3>{item.name}</h3>
+                                    <p>Price: ${item.price}</p>
+                                    <Link to={`/product/${item.id}`}>View</Link>
                                 </div>
                             </div>
                         ))}

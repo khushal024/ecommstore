@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 const Products = () => {
-  const { id } = useParams();
+  const params = useParams();
   // const [error, setError] = useState(null);
 
-  const [items, setItems] = useState([]);
+  const [singleProduct, setsingleProduct] = useState([]);
   const [isLoading, setLoading] = useState(false);
-  const [error, setError] = useState(null)
+  const [error, setError] = useState(null);
 
 
   // Note: the empty deps array [] means
@@ -14,26 +14,20 @@ const Products = () => {
   // similar to componentDidMount()
   useEffect(() => {
     // fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
-    fetch(`https://shoppingapiacme.herokuapp.com/shopping/?id=${id}`
-      , {
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      })
-      .then(res => res.json())
-      .then((result) => {
+    fetch(`http://makeup-api.herokuapp.com/api/v1/products/${params.id}.json`)
+    .then(res => res.json())
+    .then((result) => {
         setLoading(true)
-        setItems(result)
-      },
+        setsingleProduct(result)
+    },
         (error) => {
-          setLoading(true);
-          setError(error);
+            setLoading(true);
+            setError(error);
         }
-      )
+    )
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+// eslint-disable-next-line react-hooks/exhaustive-deps
+}, []) ;
 
 
   if (error) {
@@ -50,25 +44,26 @@ const Products = () => {
     return (
       <>
         <div>
-          {items.map((item) => (
 
-            <div className='product-container' key={item.id}>
+          {
+
+            <div className='product-container' key={singleProduct.id}>
               <div>
-                <img className='prod-image' src={item.image} alt='' />
+                <img className='prod-image' src={singleProduct.image_link} alt='' />
               </div>
               <div>
-                <h1 className='brand'>{item.brand}</h1>
-                <h2>{item.item}</h2>
-                <p>{item.description}</p>
+                <h1 className='brand'>{singleProduct.brand}</h1>
+                <h2>{singleProduct.item}</h2>
+                <p>{singleProduct.description}</p>
                 <p>
-                  <strong>Price:</strong> {item.price}
+                  <strong>Price:</strong> {singleProduct.price}
                 </p>
                 <p>
-                  <strong>Color:</strong> {item.color}
+                  <strong>Color:</strong> {singleProduct.color}
                 </p>
               </div>
             </div>
-          ))}
+  }
 
         </div>
       </>
