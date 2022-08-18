@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "//khushal024.github.io/ecommstore/static/css/main.bd51247e.css",
-    "main.js": "//khushal024.github.io/ecommstore/static/js/main.88ae0736.js",
+    "main.css": "//khushal024.github.io/ecommstore/static/css/main.994d1116.css",
+    "main.js": "//khushal024.github.io/ecommstore/static/js/main.e85db71e.js",
     "static/js/787.45ae4b1e.chunk.js": "//khushal024.github.io/ecommstore/static/js/787.45ae4b1e.chunk.js",
     "static/media/hero-bg.jpg": "//khushal024.github.io/ecommstore/static/media/hero-bg.a6b90eaf704836480204.jpg",
     "static/media/medicines.jpg": "//khushal024.github.io/ecommstore/static/media/medicines.7f8dbe5930654abfe1b5.jpg",
@@ -9,12 +9,12 @@
     "static/media/contact-bg.jpg": "//khushal024.github.io/ecommstore/static/media/contact-bg.b5698601a7a2c2a71d12.jpg",
     "static/media/client.png": "//khushal024.github.io/ecommstore/static/media/client.af11428716187d15f459.png",
     "index.html": "//khushal024.github.io/ecommstore/index.html",
-    "main.bd51247e.css.map": "//khushal024.github.io/ecommstore/static/css/main.bd51247e.css.map",
-    "main.88ae0736.js.map": "//khushal024.github.io/ecommstore/static/js/main.88ae0736.js.map",
+    "main.994d1116.css.map": "//khushal024.github.io/ecommstore/static/css/main.994d1116.css.map",
+    "main.e85db71e.js.map": "//khushal024.github.io/ecommstore/static/js/main.e85db71e.js.map",
     "787.45ae4b1e.chunk.js.map": "//khushal024.github.io/ecommstore/static/js/787.45ae4b1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd51247e.css",
-    "static/js/main.88ae0736.js"
+    "static/css/main.994d1116.css",
+    "static/js/main.e85db71e.js"
   ]
 }
