@@ -42,10 +42,11 @@ export const Shop = () => {
                         {items.map((item) => (
                             <div className="col-md-4" key={item.id}>
                                 <div className='card'>
-                                     <img src={item.image_link} alt='' />
+                                    <img src={item.image_link} alt='' />
                                     <h3>{item.name}</h3>
+                                    <p><b>Brand: </b>{item.brand}</p>
                                     <p>Price: ${item.price}</p>
-                                    <Link to={`/product/${item.id}`}>View</Link>
+                                    <Link className="btn btn-dark" to={`/product/${item.id}`}>View</Link>
                                 </div>
                             </div>
                         ))}

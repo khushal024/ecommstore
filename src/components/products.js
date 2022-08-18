@@ -52,14 +52,16 @@ const Products = () => {
                 <img className='prod-image' src={singleProduct.image_link} alt='' />
               </div>
               <div>
-                <h1 className='brand'>{singleProduct.brand}</h1>
-                <h2>{singleProduct.item}</h2>
-                <p>{singleProduct.description}</p>
+                <span className='text-sm brand'>Brand: {singleProduct.brand}</span>
+                <h2>Product Name: {singleProduct.name}</h2>
+                <p>Description: {singleProduct.description}</p>
                 <p>
                   <strong>Price:</strong> {singleProduct.price}
                 </p>
                 <p>
-                  <strong>Color:</strong> {singleProduct.color}
+                  <strong>Color:</strong> {singleProduct.product_colors.map((color)=>(
+                                    color.colour_name)
+                  )}
                 </p>
               </div>
             </div>
