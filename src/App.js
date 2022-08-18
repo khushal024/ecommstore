@@ -2,16 +2,16 @@ import  { BrowserRouter as Router, Routes, Route,  } from 'react-router-dom';
 import './App.scss';
 import { Header } from "./components/header"
 import { Footer } from './components/footer';
-import {Shop} from './components/shop';
-import Products from './components/products';
-import { Frontpage } from './components/frontpage'; 
-import  {Login}  from './components/login';
+import {Shop} from './pages/shop';
+import Products from './components/products'; 
+import { Frontpage } from './pages/frontpage'; 
+import  {Login}  from './pages/login';
 // import React, { useState } from 'react';
 function App() {
   // const [token, setToken] = useState();
 
   // if(!token) {
-  //   return <Login setToken={setToken} />
+  //   return <Login setToken={setToken} /> 
   // } 
 
   return (

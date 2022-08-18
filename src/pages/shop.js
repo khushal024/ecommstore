@@ -9,13 +9,7 @@ export const Shop = () => {
 
     useEffect(() => {
         // fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
-        fetch("./backend/latestproducts.json"
-            , {
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-            })
+        fetch("https://shoppingapiacme.herokuapp.com/shopping")
             .then(res => res.json())
             .then((result) => {
                 setLoading(true)
@@ -43,15 +37,19 @@ export const Shop = () => {
     else {
         return (
             <>
-                <div className='item-container my-5'>
-                    {items.map((item) => (
-                        <div className='card' key={item.id}>
-                            <img src={item.image} alt='' />
-                            <h3>{item.brand}</h3>
-                            <p>{item.item}</p>
-                            <Link to={`/${item.id}`}>View</Link>
-                        </div>
-                    ))}
+                <div className="container">
+                    <div className='item-container my-5 row'>
+                        {items.map((item) => (
+                            <div className="col-md-4">
+                                <div className='card' key={item.id}>
+                                    <img src={item.image} alt='' />
+                                    <h3>{item.brand}</h3>
+                                    <p>{item.item}</p>
+                                    <Link to={`/${item.id}`}>View</Link>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </>
         )

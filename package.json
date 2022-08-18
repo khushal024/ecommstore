@@ -1,5 +1,5 @@
-{"homepage": "https://https://khushal024.github.io/ecommstore",
-  "name": "ecommstore",
+{
+  "name": "ecommstore", 
   "version": "0.1.0",
   "private": true,
   "dependencies": {

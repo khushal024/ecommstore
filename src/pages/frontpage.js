@@ -1,6 +1,6 @@
 import React from 'react';
-import { Banner } from './banner';
-import { Contactform } from './contactform';
+import { Banner } from '../components/banner';
+import { Contactform } from '../components/contactform'; 
 import { Shop } from './shop';
 export const Frontpage = () => {
   return (
@@ -79,7 +79,7 @@ export const Frontpage = () => {
       {/* <!-- health section --> */}
 
       <section className="health_section layout_padding">
-        <div className="health_carousel-container">
+        <div className="container">
           <h2 className="text-uppercase">
             Our products
 
