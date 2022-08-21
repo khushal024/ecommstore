@@ -35,7 +35,7 @@ export const Header = () => {
                                     <img src={require('../images/4boxes.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
                                     cart
                                 </Link>
-                            </li>
+                            </li> 
                             <li>
                                 <Link to="/login" className="nav-link px-3 text-white">
                                     <img src={require('../images/meter.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />

@@ -58,7 +58,7 @@ export const Frontpage = () => {
                   It is a long established fact that a reader will be distracted by
                 </p>
                 <div>
-                  <a href="/">
+                  <a href="/shop">
                     Buy Now
                   </a>
                 </div>
