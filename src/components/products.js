@@ -14,7 +14,7 @@ const Products = () => {
   // similar to componentDidMount()
   useEffect(() => {
     // fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
-    fetch(`http://makeup-api.herokuapp.com/api/v1/products/${params.id}.json`)
+    fetch(`https://makeup-api.herokuapp.com/api/v1/products/${params.id}.json`)
     .then(res => res.json())
     .then((result) => {
         setLoading(true)
