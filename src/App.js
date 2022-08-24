@@ -11,7 +11,7 @@ function App() {
   // const [token, setToken] = useState();
 
   // if(!token) {
-  //   return <Login setToken={setToken} /> 
+  //   return <Login setToken={setToken} />  
   // } 
 
   return (
@@ -21,7 +21,7 @@ function App() {
       <Header />
 
         <Routes>
-          <Route exact path="/ecommstore" element={<Frontpage />} />
+          <Route exact path="/" element={<Frontpage />} />
           
           <Route path="/shop" element={<Shop />} />
           <Route path="/cart" element={<Frontpage />} /> 

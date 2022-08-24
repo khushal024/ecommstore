@@ -11,7 +11,7 @@ export const Header = () => {
                 <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
                     <div className="site-logo">
-                        <a href="/ecommstore" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
                             <img src={require('../images/favicon.png')} alt="gfgf" width="50"/>
                         </a>
                     </div>
@@ -19,7 +19,7 @@ export const Header = () => {
                     <div className="main-nav ms-5">
                         <ul className="nav col-12 col-lg-auto my-2  justify-content-center my-md-0 text-small">
                             <li>
-                                <Link to="/ecommstore" className="nav-link text-secondary">
+                                <Link to="/" className="nav-link text-secondary">
                                     <img src={require('../images/home.png')} className="bi d-block mx-auto mb-1" width="24" height="24" alt="" />
                                     Home
                                 </Link>
