@@ -9,7 +9,7 @@ export const Shop = () => {
 
     useEffect(() => {
         // fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
-        fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline`)
+        fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline`) 
             .then(res => res.json())
             .then((result) => {
                 setLoading(true)
