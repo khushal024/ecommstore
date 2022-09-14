@@ -6,12 +6,13 @@ import {Shop} from './pages/shop';
 import Products from './components/products'; 
 import { Frontpage } from './pages/frontpage'; 
 import  {Login}  from './pages/login';
+import {Cart} from './pages/cart'
 // import React, { useState } from 'react';
 function App() {
   // const [token, setToken] = useState();
 
   // if(!token) {
-  //   return <Login setToken={setToken} /> 
+  //   return <Login setToken={setToken} />  
   // } 
 
   return (
@@ -24,7 +25,7 @@ function App() {
           <Route exact path="/" element={<Frontpage />} />
           
           <Route path="/shop" element={<Shop />} />
-          <Route path="/cart" element={<Frontpage />} /> 
+          <Route path="/cart" element={<Cart />} /> 
           <Route exact path='product/:id'  element={<Products />} />
           <Route path="/login" element={<Login />} />
         </Routes>

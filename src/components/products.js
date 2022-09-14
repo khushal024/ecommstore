@@ -14,7 +14,7 @@ const Products = () => {
   // similar to componentDidMount()
   useEffect(() => {
     // fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
-    fetch(`http://makeup-api.herokuapp.com/api/v1/products/${params.id}.json`)
+    fetch(`https://makeup-api.herokuapp.com/api/v1/products/${params.id}.json`)
     .then(res => res.json())
     .then((result) => {
         setLoading(true)
@@ -29,7 +29,9 @@ const Products = () => {
 // eslint-disable-next-line react-hooks/exhaustive-deps
 }, []) ;
 
-
+let comminSoon = ()=>{
+  alert("Comming soon")
+}
   if (error) {
     return <div>Error: {error.message}</div>;
   }
@@ -56,13 +58,15 @@ const Products = () => {
                 <h2>Product Name: {singleProduct.name}</h2>
                 <p>Description: {singleProduct.description}</p>
                 <p>
-                  <strong>Price:</strong> {singleProduct.price}
+                  <strong>Price :</strong> {singleProduct.price}
                 </p>
                 <p>
-                  <strong>Color:</strong> {singleProduct.product_colors.map((color)=>(
-                                    color.colour_name)
+                  <strong>Colors : </strong> 
+                  {singleProduct.product_colors.map((color)=>(
+                                    <span>{color.colour_name}, </span>)
                   )}
                 </p>
+                <button className="btn btn-dark" onClick={comminSoon} href="/cart" >Add to cart</button>
               </div>
             </div>
   }
